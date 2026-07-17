@@ -28,7 +28,7 @@ Paste the contents of:
 
 `supabase/functions/player-progress/index.ts`
 
-Turn **Verify JWT** off for this function. Decentraland Signed Fetch is verified inside the function instead.
+Turn **Verify JWT with legacy secret** off for this function. Decentraland Signed Fetch is verified inside the function instead.
 
 Deploy the function.
 
@@ -47,4 +47,4 @@ Guest players are not given permanent saves because their guest identity is not 
 
 ## Security model
 
-The scene calls the Edge Function with Decentraland `signedFetch`. The function verifies the player authentication chain and only accepts requests signed from the scene at parcel `-137,93`. The database table is not exposed to the public Supabase Data API.
+The scene calls the Edge Function with Decentraland `signedFetch`. The function verifies the player authentication chain and only accepts requests signed from the scene at parcel `-77,139`. Signature verification uses the public path `/functions/v1/player-progress`. The database table is not exposed to the public Supabase Data API.
