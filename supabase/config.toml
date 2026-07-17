@@ -1,0 +1,4 @@
+project_id = "lqsoatamutwszjgdfzco"
+
+[functions.player-progress]
+verify_jwt = false
