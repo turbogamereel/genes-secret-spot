@@ -1,13 +1,28 @@
 # Gene's Secret Spot
 
-Decentraland SDK7 fishing, music and social scene.
+Decentraland SDK7 fishing and event-hangout scene.
 
-## Cloud saves
+## Stable checkpoint
 
-The scene uses Supabase and Decentraland `signedFetch` to save wallet-connected player progress. Backend files are stored under `supabase/`.
+This source backup matches the first confirmed working cloud-save deployment on July 16, 2026.
 
-Saved data includes level, XP, coins, energy, inventory, fish collection and completed sets.
+- Live parcel: `-77,139`
+- Supabase Edge Function: `player-progress`
+- Signed request path: `/functions/v1/player-progress`
+- Saved data: level, XP, coins, energy, inventory, collections, and completed sets
+- Wallet-based saves verified with Decentraland signed identity headers
 
-Complete the two one-time Supabase dashboard steps in `SUPABASE_SETUP.md` before publishing the cloud-save build.
+## Run locally
 
-Guest players do not receive permanent saves.
+```bash
+npm install
+npm run start
+```
+
+## Production build
+
+```bash
+npm run build
+```
+
+See `CLOUD_SAVE_SETUP.md` and `SUPABASE_SETUP.md` for backend setup details.
