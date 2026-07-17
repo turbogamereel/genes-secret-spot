@@ -3,9 +3,9 @@
   "runtimeVersion": "7",
   "display": {
     "title": "Genes Secret Spot",
-    "description": "Fishing, music and social hangout with persistent wallet-based progress.",
+    "description": "Empty Scene Template",
     "favicon": "favicon_asset",
-    "navmapThumbnail": "assets/scene/Images/ChatGPT_Image_Jul_15,_2026,_05_45_11_PM_(1).png"
+    "navmapThumbnail": "assets/scene/Images/gene-secret-spot-thumbnail.png"
   },
   "owner": "",
   "contact": {
@@ -51,7 +51,7 @@
   ],
   "featureToggles": {
     "voiceChat": "enabled",
-    "portableExperiences": "enabled",
+    "portableExperiences": "disabled",
     "nearbyVoiceChat": "enabled"
   },
   "creator": "0x31D0Dfd048875e6bFC9dB0a812A4dD5B2EAF0638",

@@ -1,5 +1,6 @@
 // Auto-generated entity names from the scene
 
+
 /**
  * Object containing all entity names in the scene for autocomplete support.
  */
@@ -15,6 +16,9 @@ export enum EntityNames {
   Invisible_Ramp = "Invisible Ramp",
   Invisible_Wall = "Invisible Wall",
   Invisible_Wall_2 = "Invisible Wall_2",
+  PARKOUR_START = "PARKOUR_START",
+  PARKOUr_FINISH = "PARKOUr_FINISH",
+  Parkour_glb = "Parkour.glb",
   Sandy_Rock = "Sandy Rock",
   Sandy_Rock_10 = "Sandy Rock_10",
   Sandy_Rock_11 = "Sandy Rock_11",
@@ -47,5 +51,5 @@ export enum EntityNames {
   pinkt3_glb_5 = "pinkt3.glb_5",
   stage_cleaned_with_colliders_glb = "stage_cleaned_with_colliders.glb",
   waterreal_glb_2 = "waterreal.glb_2",
-  waterreal_glb_3 = "waterreal.glb_3"
-}
+  waterreal_glb_3 = "waterreal.glb_3",
+} 

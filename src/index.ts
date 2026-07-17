@@ -16,6 +16,7 @@ import {
   startFishingWithEnergy,
   updateUiAnimation
 } from './ui'
+import { setupParkour } from './parkour'
 
 // The water model is a 16 x 16 metre plane before scene scaling.
 // Each placed water entity gets its own pointer-only interaction surface.
@@ -93,6 +94,7 @@ function distanceToNearestWaterPoint(playerWorld: Vector3.ReadonlyVector3, area:
 export function main() {
   setupUi()
   engine.addSystem(updateUiAnimation)
+  setupParkour()
 
   const fishingAreas: FishingArea[] = []
 

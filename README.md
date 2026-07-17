@@ -1,28 +1,34 @@
 # Gene's Secret Spot
 
-Decentraland SDK7 fishing and event-hangout scene.
+Decentraland SDK7 fishing, social-event and parkour scene.
 
-## Stable checkpoint
+## Latest working checkpoint
 
-This source backup matches the first confirmed working cloud-save deployment on July 16, 2026.
+This backup branch tracks the build with:
 
-- Live parcel: `-77,139`
-- Supabase Edge Function: `player-progress`
-- Signed request path: `/functions/v1/player-progress`
-- Saved data: level, XP, coins, energy, inventory, collections, and completed sets
-- Wallet-based saves verified with Decentraland signed identity headers
+- Supabase wallet-based cloud saves
+- Top 10 level leaderboard
+- Daily challenges
+- Smart-item parkour start and finish triggers
+- Fastest-time parkour leaderboard
+- End Run control
+- Parkour focus mode that leaves only the timer visible
+- Updated Gene's Secret Spot thumbnail
 
-## Run locally
+Scene base parcel: `-77,139`.
 
-```bash
-npm install
-npm run start
+## Backed up here
+
+The repository contains the current scene configuration, fishing entry logic, smart-trigger parkour logic, Supabase Edge Function, SQL migrations and setup documentation.
+
+The complete Builder-ready ZIP contains the large UI source, scene composite and binary GLB/image assets. Its exact SHA-256 is recorded in `BACKUP_MANIFEST.md` so the matching archive can be verified.
+
+## Supabase
+
+The active Edge Function is:
+
+```text
+supabase/functions/player-progress/index.ts
 ```
 
-## Production build
-
-```bash
-npm run build
-```
-
-See `CLOUD_SAVE_SETUP.md` and `SUPABASE_SETUP.md` for backend setup details.
+Keep **Verify JWT with legacy secret** switched off. Decentraland `signedFetch` verification is performed inside the function.
