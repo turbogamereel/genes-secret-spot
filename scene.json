@@ -1,0 +1,64 @@
+{
+  "ecs7": true,
+  "runtimeVersion": "7",
+  "display": {
+    "title": "Genes Secret Spot",
+    "description": "Fishing, music and social hangout with persistent wallet-based progress.",
+    "favicon": "favicon_asset",
+    "navmapThumbnail": "assets/scene/Images/ChatGPT_Image_Jul_15,_2026,_05_45_11_PM_(1).png"
+  },
+  "owner": "",
+  "contact": {
+    "name": "Gene Simmons",
+    "email": ""
+  },
+  "main": "bin/index.js",
+  "tags": [],
+  "scene": {
+    "base": "-77,139",
+    "parcels": [
+      "-77,141",
+      "-76,141",
+      "-75,141",
+      "-77,140",
+      "-76,140",
+      "-75,140",
+      "-77,139",
+      "-76,139",
+      "-75,139"
+    ]
+  },
+  "spawnPoints": [
+    {
+      "name": "SpawnArea1",
+      "default": true,
+      "position": {
+        "x": [0, 3],
+        "y": [0, 0],
+        "z": [0, 3]
+      },
+      "cameraTarget": {
+        "x": 8,
+        "y": 1,
+        "z": 8
+      }
+    }
+  ],
+  "requiredPermissions": [
+    "ALLOW_TO_TRIGGER_AVATAR_EMOTE",
+    "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE",
+    "USE_FETCH"
+  ],
+  "featureToggles": {
+    "voiceChat": "enabled",
+    "portableExperiences": "enabled",
+    "nearbyVoiceChat": "enabled"
+  },
+  "creator": "0x31D0Dfd048875e6bFC9dB0a812A4dD5B2EAF0638",
+  "skyboxConfig": {},
+  "source": {
+    "origin": "creator-hub",
+    "projectId": "1b8dc448-cc1a-4e3c-acd6-a777397101e6"
+  },
+  "rating": "A"
+}
